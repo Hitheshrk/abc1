@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of 'n' Natural Numbers</title>
+</head>
+<body>
+    <label for="n">Enter a number:</label>
+    <input type="text" id="n">
+
+    <button onclick="sumOfNaturalNumbers()"> Sum </button>
+
+    <script>
+        function sumOfNaturalNumbers() {
+            var n = parseInt(document.getElementById("n").value);
+
+            var sum = (n * (n + 1)) / 2;
+
+            alert("The sum of first " + n + " natural numbers is: " + sum);
+        }
+    </script>
+</body>
+</html>
